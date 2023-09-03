@@ -1,0 +1,366 @@
+.Home {
+    width: 100%;
+    height: 100vh;
+    /* background-image: url('../img/raysBG.png'); */
+    /* background-position: center; */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: black;
+    z-index: 1;
+    position: relative;
+}
+
+#bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: .5vmax 0;
+}
+
+#logo {
+    /* flex: 1; */
+    width: 10%;
+
+    text-align: center;
+}
+
+#logo>img {
+    width: 2vmax;
+}
+
+#menu {
+    /* flex: 3; */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+}
+
+#menu>a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 1vmax;
+
+    font: 500 1vmax "Roboto";
+}
+
+.eyeContainer {
+    color: white;
+    /* flex: 1; */
+    border: 1px solid gold;
+    text-align: center;
+    width: 10%;
+margin-right: 2.5vmax;
+
+}
+
+#eye {
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 75% 15%;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+#eyeBall{
+    width: 35px;
+    height: 35px;
+    background-color: #00d54b;
+    border: 2px solid #00d54b;
+
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#iris{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+#iris::after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 25%;
+    top: 35%;
+}
+
+
+/* center div work . means phone img with cash app and fourt other img */
+.centerCashPhone {
+    width: inherit;
+    height: 90%;
+    text-align: center;
+    /* height: inherit; */
+    border: 1px solid red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phoneAndText {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    border: 1px solid gold;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.phoneAndText>img {
+    border: 1px solid blue;
+    position: relative;
+    z-index: 3;
+    width: 23vmax;
+}
+
+#cashText {
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: -12%;
+    font: 600 13vmax "Roboto";
+    z-index: 2;
+}
+
+#appText {
+    position: absolute;
+    color: white;
+    left: 20%;
+    top: 37%;
+    font: 600 13vmax "Roboto";
+    z-index: 3;
+
+}
+
+#smallCube>img {
+    position: fixed;
+    top: 10%;
+    left: 15%;
+    width: 5vmax;
+
+}
+
+#biglCube>img {
+    position: fixed;
+    top: 65%;
+    left: 15%;
+    width: 13vmax;
+
+}
+
+
+#stairs>img {
+    position: fixed;
+    top: 10%;
+    right: 20%;
+    width: 13vmax;
+}
+
+#pillar>img {
+    position: fixed;
+    top: 60%;
+    right: 25%;
+    width: 20vmax;
+}
+
+/* footer of home page */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    bottom: 10%;
+}
+
+.appAndGoogleBtn {
+    display: flex;
+    width: 40%;
+}
+
+.appAndGoogleBtn>button {
+    padding: .5vmax;
+    font: 100 1vmax "Roboto";
+
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1vmax;
+    cursor: pointer;
+    transition: all .5s;
+}
+.appAndGoogleBtn>button:hover{
+    background-color: #00d54b;
+
+}
+
+.appAndGoogleBtn>button>svg {
+    color: #00d54b;
+    font-size: 1.5vmax;
+    margin-right: .5vmax;
+}
+
+.downArrow>svg {
+    cursor: pointer;
+
+    font-size: 4vmax;
+    color: #00d54b;
+}
+
+
+.socialAndPara {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.socialAndPara>div:first-child {
+    width: 50%;
+    display: flex;
+    align-self: flex-start;
+
+}
+
+.socialAndPara>div:first-child>p {
+    font-size: .7vmax;
+    font-family: "Roboto";
+    color: white;
+}
+
+#social {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 .5vmax;
+}
+
+#social>a {
+
+    font-size: 1.5vmax;
+    padding: .5vmax;
+    color: white;
+    cursor: pointer;
+    transition: all .5s;
+}
+#social>a:hover {
+    color: #00d54b;
+}
+
+
+
+@media screen and (max-width:370px) {
+    .phoneAndText>img {
+        width: 23vmax;
+    }
+    
+    #cashText {
+        left: -20%;
+        top: 15%;
+    }
+    
+    #appText {
+        left: -5%;
+        top: 40%;
+    
+    }
+    #menu {
+        display: none;
+     
+     }
+     .nav {
+         justify-content: space-between;
+        
+     }
+     /* .footer{
+        display: none;
+     } */
+}
+@media screen and (min-width:371px) and (max-width:500px) {
+    .phoneAndText>img {
+        width: 23vmax;
+    }
+    
+    #cashText {
+        left: 10%;
+        top: 20%;
+    }
+    
+    #appText {
+        left: 18%;
+        top: 45%;
+    
+    }
+    #menu {
+       display: none;
+    
+    }
+    .nav {
+        justify-content: space-between;
+       
+    }
+}
+@media screen and (min-width:501px) and (max-width:800px) {
+    .phoneAndText>img {
+        width: 23vmax;
+    }
+    
+    #cashText {
+        left: 3%;
+        top: 20%;
+    }
+    
+    #appText {
+        left: 15%;
+        top: 45%;
+    
+    }
+}
+@media screen and (min-width:801px) and (max-width:900px) {
+    .phoneAndText>img {
+        width: 23vmax;
+    }
+    
+    #cashText {
+        left: 3%;
+        top: 10%;
+    }
+    
+    #appText {
+        left: 15%;
+        top: 45%;
+    
+    }
+}
